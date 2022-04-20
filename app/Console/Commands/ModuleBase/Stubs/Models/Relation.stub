@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Class ModuleNameRelation
+ * @package App\Modules\ModuleName\Models\Relations
+ * @author Electric <huydien.it@gmail.com>
+ */
+
+namespace App\Modules\ModuleName\Models\Relations;
+
+trait ModuleNameRelation
+{
+
+}

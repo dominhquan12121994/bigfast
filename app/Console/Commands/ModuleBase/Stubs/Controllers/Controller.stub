@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Class IndexController
+ * @package App\Modules\ModuleName\Controllers\NameSpace
+ * @author Electric <huydien.it@gmail.com>
+ */
+
+namespace App\Modules\ModuleName\Controllers\NameSpace;
+
+use App\Http\Controllers\NameSpace\AbstractNameSpaceController;
+
+class IndexController extends AbstractNameSpaceController
+{
+
+}

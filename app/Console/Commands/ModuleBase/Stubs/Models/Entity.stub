@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * Class ModuleName
+ * @package App\Modules\ModuleName\Models
+ * @author Electric <huydien.it@gmail.com>
+ */
+
+namespace App\Modules\ModuleName\Models\Entities;
+
+/* Contracts */
+use App\Models\Entities\AbstractModel;
+
+/* Traits */
+use App\Modules\ModuleName\Models\Mutator\ModuleNameMutator;
+use App\Modules\ModuleName\Models\Relations\ModuleNameRelation;
+
+/* Filter */
+//use App\Modules\ModuleName\Models\Filters\ModuleNameFilter;
+
+/* Observer */
+use App\Modules\ModuleName\Models\Observers\ModuleNameObservers;
+
+/* Libs */
+
+class ModuleName extends AbstractModel
+{
+    use ModuleNameMutator, ModuleNameRelation;
+
+    protected $fillable = array();
+
+    protected $hidden = array(
+    );
+
+    /*
+    public function scopeFilter($query, ModuleNameFilter $filter){
+        return $filter->apply($query);
+    }
+    */
+
+    public static function boot()
+    {
+        parent::boot();
+        self::observe(ModuleNameObservers::class);
+    }
+}

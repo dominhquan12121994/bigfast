@@ -1,0 +1,99 @@
+<?php
+
+/**
+ * Class ModuleNameObserver
+ * @package App\Modules\ModuleName\Models\Observer
+ * @author Electric <huydien.it@gmail.com>
+ */
+
+namespace App\Modules\ModuleName\Models\Observer;
+
+use App\Modules\ModuleName\Models\Entities\ModuleName;
+
+class ModuleNameObserver
+{
+    /**
+     * Handle the account "creating" event.
+     * @param ModuleName $model
+     * @return void
+     */
+    public function creating(ModuleName $model){
+
+    }
+
+    /**
+     * Handle the account "created" event.
+     * @param ModuleName $model
+     * @return void
+     */
+    public function created(ModuleName $model)
+    {
+        //
+    }
+
+    /**
+     * Handle the account "updated" event.
+     *
+     * @param ModuleName $model
+     * @return void
+     */
+    public function updated(ModuleName $model)
+    {
+        //
+    }
+
+    /**
+     * Handle the account "updating" event.
+     *
+     * @param ModuleName $model
+     * @return void
+     */
+    public function updating(ModuleName $model)
+    {
+        //
+    }
+
+    /**
+     * Handle the account "deleted" event.
+     *
+     * @param ModuleName $model
+     * @return void
+     */
+    public function deleted(ModuleName $model)
+    {
+        //
+    }
+
+    /**
+     * Handle the account "deleting" event.
+     *
+     * @param ModuleName $model
+     * @return void
+     */
+    public function deleting(ModuleName $model)
+    {
+        //
+    }
+
+    /**
+     * Handle the account "restored" event.
+     *
+     * @param ModuleName $model
+     * @return void
+     */
+    public function restored(ModuleName $model)
+    {
+        //
+    }
+
+    /**
+     * Handle the account "force deleted" event.
+     *
+     * @param ModuleName $model
+     * @return void
+     */
+    public function forceDeleted(ModuleName $model)
+    {
+        //
+    }
+}

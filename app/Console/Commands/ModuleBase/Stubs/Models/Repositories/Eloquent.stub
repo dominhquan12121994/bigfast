@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * Class ModuleName
+ * @package App\Modules\ModuleName\Models\Repositories\Eloquent
+ * @author Electric <huydien.it@gmail.com>
+ */
+
+namespace App\Modules\ModuleName\Models\Repositories\Eloquent;
+
+use App\Models\Repositories\Eloquent\AbstractEloquentRepository;
+use App\Modules\ModuleName\Models\Repositories\Contracts\ModuleNameInterface;
+
+/* Model */
+use App\Modules\ModuleName\Models\Entities\ModuleName;
+
+class ModuleNameRepository extends AbstractEloquentRepository implements ModuleNameInterface
+{
+    protected function _getModel()
+    {
+        return ModuleName::class;
+    }
+}

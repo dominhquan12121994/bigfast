@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Class ModuleNameMutator
+ * @package App\Modules\ModuleName\Models\Mutator
+ * @author Electric <huydien.it@gmail.com>
+ */
+
+namespace App\Modules\ModuleName\Models\Mutator;
+
+trait ModuleNameMutator
+{
+
+}

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * Class ModuleNameFilter
+ * @package App\Modules\ModuleName\Models\Filters
+ * @author Electric <huydien.it@gmail.com>
+ */
+
+namespace App\Modules\ModuleName\Models\Filters;
+
+use App\Models\Filters\AbstractFilter;
+
+class ModuleNameFilter extends AbstractFilter
+{
+    /**
+     * Demo filter
+     * @param string $direction
+     * @return \Illuminate\Database\Eloquent\Builder
+     * @author Electric <huydien.it@gmail.com>
+     */
+    //public function order($direction = 'desc'){
+    //    return $this->builder->orderBy('order', $direction);
+    //}
+}

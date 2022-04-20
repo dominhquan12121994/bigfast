@@ -1,0 +1,13 @@
+deploy-develop-bigfast:
+  before_script:
+    - 'which ssh-agent || ( yum update -y && yum install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - whoami
+    - cd /home/dienpal/web/dev.bigfast.vn/public_html
+  script:
+    - git pull origin develop
+  only:
+    - develop

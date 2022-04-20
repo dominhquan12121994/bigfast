@@ -1,0 +1,16 @@
+/dist
+/node_modules
+/public/files
+/resources/assets
+/storage
+/vendor
+.env
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+composer.phar
+composer.lock
+.idea

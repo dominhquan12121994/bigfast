@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Class ModuleNameInterface
+ * @package App\Modules\ModuleName\Models\Repositories\Contracts
+ * @author Electric <huydien.it@gmail.com>
+ */
+
+namespace App\Modules\ModuleName\Models\Repositories\Contracts;
+
+use App\Models\Repositories\Contracts\AbstractEloquentInterface;
+
+interface ModuleNameInterface extends AbstractEloquentInterface
+{
+
+}
